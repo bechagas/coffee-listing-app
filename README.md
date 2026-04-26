@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/bechagas/coffee-listing-app">
+    <a href="https://devchallenges.io/solution/66384">
       Solution
     </a>
     <span> | </span>
