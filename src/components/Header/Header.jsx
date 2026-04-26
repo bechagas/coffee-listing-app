@@ -6,7 +6,7 @@ const Header = ({ handleFilter, currentFilter }) => {
     <header className={styles.header}>
       <img 
         className={styles.vector}
-        src="/assets/icons/vector.svg" 
+        src="assets/icons/vector.svg" 
         alt="" 
         aria-hidden="true"
       />

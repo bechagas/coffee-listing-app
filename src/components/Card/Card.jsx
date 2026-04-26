@@ -20,8 +20,8 @@ const Card = ({ name, image, price, rating, votes, isPopular, isAvailable }) => 
           <img 
             className={styles.starIcon}
             src={rating
-              ? "/assets/icons/Star_fill.svg"
-              : "/assets/icons/Star.svg"
+              ? "assets/icons/Star_fill.svg"
+              : "assets/icons/Star.svg"
             } 
             alt=""
             aria-hidden="true"
