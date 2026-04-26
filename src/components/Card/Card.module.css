@@ -1,0 +1,99 @@
+/* ===========================
+   CARD — Card Individual
+   =========================== */
+
+.card {
+  position: relative;
+}
+
+/* Imagem */
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Badge "Popular" */
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: var(--color-accent-gold);
+  color: var(--color-bg-card);
+  font-size: var(--font-small);
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+
+/* Info Section */
+.info {
+  margin-top: 12px;
+}
+
+/* Title + Price Row */
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: var(--font-body);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.price {
+  font-size: var(--font-price);
+  font-weight: 700;
+  background-color: var(--color-accent-green);
+  color: var(--color-bg-card);
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* Rating Row */
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.starIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.ratingValue {
+  font-size: var(--font-label);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.votes {
+  font-size: var(--font-label);
+  color: var(--color-text-secondary);
+}
+
+.noRatings {
+  font-size: var(--font-label);
+  color: var(--color-text-secondary);
+}
+
+.soldOut {
+  font-size: var(--font-label);
+  font-weight: 700;
+  color: var(--color-accent-red);
+  margin-left: auto;
+}

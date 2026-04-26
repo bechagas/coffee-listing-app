@@ -1,0 +1,58 @@
+/* ===========================
+   GLOBAL RESET & VARIABLES
+   =========================== */
+
+:root {
+  /* Colors */
+  --color-bg-page: #1B1D1F;
+  --color-bg-card: #111315;
+  --color-text-primary: #FEF7EE;
+  --color-text-secondary: #6F757C;
+  --color-text-body: #4D5562;
+  --color-accent-gold: #F6C768;
+  --color-accent-green: #BEE3CC;
+  --color-accent-brown: #302522;
+  --color-accent-red: #ED735D;
+
+  /* Typography */
+  --font-family: 'DM Sans', sans-serif;
+  --font-heading: 2rem;          /* 32px */
+  --font-body: 1rem;             /* 16px */
+  --font-label: 0.875rem;        /* 14px */
+  --font-small: 0.625rem;        /* 10px */
+  --font-price: 0.75rem;         /* 12px */
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-body);
+  background-color: var(--color-bg-page);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}

@@ -1,0 +1,27 @@
+/* ===========================
+   CARD LIST — Grid Responsivo
+   =========================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 32px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .grid {
+    gap: 24px;
+    margin-top: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 24px;
+  }
+}

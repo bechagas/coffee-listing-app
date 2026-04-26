@@ -1,0 +1,40 @@
+/* ===========================
+   APP — Layout Principal
+   =========================== */
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flow-root;
+}
+
+/* Banner de fundo (imagem do café) */
+.wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 280px;
+  background-image: url('/assets/resources/bg-cafe-desktop.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .wrapper::before {
+    height: 200px;
+    background-image: url('/assets/resources/bg-cafe-tablet.jpg');
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .wrapper::before {
+    height: 160px;
+    background-image: url('/assets/resources/bg-cafe-mobile.jpg');
+  }
+}
