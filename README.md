@@ -1,4 +1,4 @@
-<h1 align="center">{Bernardo Chagas} | devChallenges</h1>
+<h1 align="center">Bernardo Chagas | devChallenges</h1>
 
 <div align="center">
    Solution for a challenge <a href="https://devchallenges.io/challenge/simple-coffee-listing" target="_blank">Simple Coffee Listing</a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://bechagas.github.io/coffee-listing-app/">
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="https://github.com/bechagas/coffee-listing-app">
       Solution
     </a>
     <span> | </span>
@@ -29,56 +29,57 @@
   - [Useful resources](#useful-resources)
 - [Built with](#built-with)
 - [Features](#features)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+- [Author](#author)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](./public/thumbnail.jpg)
 
-<!--
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- What have you learned/improved?
-- Your wisdom? :)
--->
+This project is a responsive coffee listing application that fetches data from an API and allows users to filter between all products and those currently available. It was built focusing on clean code, responsiveness, and accessibility.
 
 ### What I learned
 
-<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
+During this challenge, I reinforced several important concepts:
+
+- **Advanced CSS Grid:** Implementing a responsive grid that adapts from 3 columns on desktop/tablet to 1 column on mobile devices using media queries.
+- **Margin Collapse & Layout Stacking:** Solved layout issues where the background image wouldn't align to the "ceiling" of the browser by using `display: flow-root` on the wrapper, preventing margin collapse between the parent and child elements.
+- **Async Data Fetching in React:** Implemented robust data fetching using `useEffect` and `async/await`, including proper state management for **Loading** and **Error** states to improve user experience.
+- **Web Accessibility (A11y):** Enhanced the filter buttons by adding `aria-pressed` attributes, ensuring that the active state is correctly communicated to assistive technologies.
+
+```jsx
+// Example of the accessible filter button implementation
+<button
+  className={`${styles.btn} ${currentFilter === 'all' ? styles.active : ''}`}
+  onClick={() => handleFilter('all')}
+  aria-pressed={currentFilter === 'all'}
+>
+  All Products
+</button>
+```
 
 ### Useful resources
 
-<!--
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
--->
+- [MDN - CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) - Essential for building the card collection.
+- [Modern Guide to Margin Collapse](https://web.dev/articles/margin-collapse) - Helped in understanding why the background wasn't hitting the top of the viewport.
 
 ### Built with
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- CSS Custom Properties (Variables)
+- CSS Modules (Scoped styling)
+- Flexbox & CSS Grid
+- [React 19](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
 
 ## Features
 
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
-
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
-
-## Acknowledgements
-
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
+- **Dynamic Data:** Fetches coffee data from an external JSON API.
+- **Filtering:** Toggle between viewing all products or only those currently in stock.
+- **Fully Responsive:** Optimized for Mobile, Tablet, and Desktop resolutions.
+- **Polished UI:** Includes custom loading indicators and error handling for failed API requests.
 
 ## Author
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
+- GitHub [@bechagas](https://github.com/bechagas)
